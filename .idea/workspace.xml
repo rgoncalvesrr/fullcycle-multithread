@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="313f7340-00bf-4de8-b847-fd53f97c0605" name="Changes" comment="">
+    <list default="true" id="313f7340-00bf-4de8-b847-fd53f97c0605" name="Changes" comment="Finalização defio FullCycle Multithreading&#10;&#10;No momento dos testes a api &quot;apicep&quot; está respondendo bem mais rápido.&#10;&#10;Devido a este fato coloque o parâmetro de atraso na rotina para fazer os testes, inclusive de timeout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
     </list>
@@ -80,15 +80,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1675900727952</updated>
-      <workItem from="1675900728967" duration="4159000" />
+      <workItem from="1675900728967" duration="5603000" />
     </task>
+    <task id="LOCAL-00001" summary="Finalização defio FullCycle Multithreading&#10;&#10;No momento dos testes a api &quot;apicep&quot; está respondendo bem mais rápido.&#10;&#10;Devido a este fato coloque o parâmetro de atraso na rotina para fazer os testes, inclusive de timeout">
+      <created>1675905536075</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1675905536075</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Finalização defio FullCycle Multithreading&#10;&#10;No momento dos testes a api &quot;apicep&quot; está respondendo bem mais rápido.&#10;&#10;Devido a este fato coloque o parâmetro de atraso na rotina para fazer os testes, inclusive de timeout" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalização defio FullCycle Multithreading&#10;&#10;No momento dos testes a api &quot;apicep&quot; está respondendo bem mais rápido.&#10;&#10;Devido a este fato coloque o parâmetro de atraso na rotina para fazer os testes, inclusive de timeout" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

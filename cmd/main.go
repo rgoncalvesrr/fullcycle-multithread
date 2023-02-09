@@ -1,3 +1,6 @@
+// Desafio FullCycle Multithreading
+//
+// Referência: https://blog.devgenius.io/building-a-go-rest-client-in-2022-1ba8bb4c2201
 package main
 
 import (
@@ -22,8 +25,8 @@ func main() {
 	chanApiCep := make(chan CEPResp)
 	chanViaCep := make(chan CEPResp)
 
-	go ConsultaCep(urlApiCep, "01310-200", chanApiCep, 0)
-	go ConsultaCep(urlViaCep, "01310200", chanViaCep, 0)
+	go Worker(urlApiCep, "01310-200", chanApiCep, 0)
+	go Worker(urlViaCep, "01310200", chanViaCep, 0)
 
 	select {
 	case apiCep := <-chanApiCep:
@@ -35,7 +38,7 @@ func main() {
 	}
 }
 
-func ConsultaCep(url string, cep string, bodyCannel chan<- CEPResp, delay time.Duration) {
+func Worker(url string, cep string, bodyCannel chan<- CEPResp, delay time.Duration) {
 
 	time.Sleep(delay)
 
@@ -50,7 +53,7 @@ func ConsultaCep(url string, cep string, bodyCannel chan<- CEPResp, delay time.D
 	}
 
 	body, err := io.ReadAll(res.Body)
-	res.Body.Close()
+	_ = res.Body.Close()
 
 	if err != nil {
 		close(bodyCannel)
